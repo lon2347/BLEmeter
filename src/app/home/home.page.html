@@ -1,15 +1,35 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Sign Pad
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
-  <app-sign-pad (signImage)="signImage($event)"></app-sign-pad>
-
-  <img *ngIf="image" [src]="image" />
-  
+  <div class="fixed-content">
+    <div class="coverhead"></div>
+    <div class="tophead"></div>
+    <div class="logo"></div>
+    <div class="headtxt">蓝牙电表</div>
+  </div>
+  <div *ngIf="isScanning" class="spinner-container">
+      <ion-spinner name="circular" color="secondary"></ion-spinner>  
+  </div>
+  <ion-list class="devicelist">
+    <ng-container *ngFor="let device of devices">
+      <ion-item>
+        <ion-button size="small" (click)="deviceSelected(device)">
+          <ion-icon slot="start" name="bluetooth"></ion-icon>
+          <ion-label>
+            {{ device.name }}
+          </ion-label>
+        </ion-button>
+      </ion-item>
+    </ng-container>
+  </ion-list>
 </ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <div class="footer-content">
+      <ion-button style="font-family:'ZCKL'" (click)="scan()" class="ion-margin-end">
+        搜索
+      </ion-button>
+      <ion-button style="font-family:'ZCKL'" (click)="clear()" class="ion-margin-start">
+        清除
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

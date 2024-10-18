@@ -1,0 +1,186 @@
+.fixed-content {
+  position: fixed;
+  top: 0;
+  width: 100%; /* Ensure it spans the full width */
+  // z-index: 10; /* Higher index to keep it above the scrollable list */
+}
+ion-content{
+  opacity: 1;
+  --overflow: hidden; /* Optional, for better control over scrolling */
+  --background: rgba(244, 248, 251, 1);
+}
+ion-button{
+  --box-shadow: none;
+  --outline-style: none;
+
+}
+ion-button:hover, ion-button:active {
+  opacity: 0.9;  /* Example to change opacity on hover/active */
+}
+.headtxt{
+  display:flex;
+  position: absolute;
+  z-index: 3;
+  top: 30px;
+  justify-content: center;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 23.44px;
+  color: rgba(6, 33, 26, 1);
+}
+.tophead{
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 476px;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.6;
+  background: linear-gradient(166.95deg, rgba(148, 191, 255, 1) 0%, rgba(227, 230, 250, 1) 46.69%, rgba(244, 248, 251, 1) 100%);
+}
+.coverhead{
+  display: flex;
+  position: relative;
+  z-index: 1;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  height: 467px;
+  opacity: 1;
+  background: url('/assets/img/bg.png') no-repeat center center;
+  background-size: cover;
+}
+.rectangle{
+  background: url('/assets/img/loadintime.png') no-repeat center center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Creates 4 equal columns */
+  grid-template-rows: repeat(3, auto); /* Creates 3 rows that fit the content */
+  gap: 5px; /* Sets equal gap between rows and columns */
+  justify-items: center;  /* Centers items horizontally in their cell */
+  align-items: center;  /* Centers items vertically in their cell */
+  padding: 24px; /* Optional padding around the grid */
+  position:absolute;
+  z-index: 4;
+  top: 108px;
+  left:50%;
+  transform: translate(-50%, 0); 
+  width: 335px;
+  height: 223px;
+  opacity: 1;
+  border-radius: 10px;
+}
+span {
+  position: relative;
+  top: 12px;  /* Adjusts the position upwards */
+  left: 75px;  /* Adjusts the position to the right */
+  color: blue;
+  font-size: 15px;
+  
+}
+.mycanvas{  
+  background: white;
+  background-size: cover;
+  position:absolute;
+  z-index: 4;
+  top: 343px;
+  left:50%;
+  transform: translate(-50%, 0); 
+  width: 335px;
+  height: 191px;
+  opacity: 1;
+  border-radius: 10px;
+}
+.mydate{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background: white;
+  background-size: cover;
+  position:absolute;
+  z-index: 4;
+  top: 551px;
+  left:50%;
+  transform: translate(-50%, 0); 
+  width: 333px;
+  height: 56px;
+  opacity: 1;
+  border-radius: 5px;
+}
+.myselect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background: transparent;
+  background-size: cover;
+  position:absolute;
+  z-index: 4;
+  top: 620px;
+  left:50%;
+  transform: translate(-50%, 0); 
+  width: 333px;
+  height: 40px;
+  opacity: 1;
+  border-radius: 5px;
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 4 equal columns */
+  grid-template-rows: repeat(2, auto); /* Creates 3 rows that fit the content */
+  gap: 5px; /* Sets equal gap between rows and columns */
+  justify-items: center;  /* Centers items horizontally in their cell */
+  align-items: center;  /* Centers items vertically in their cell */
+  padding: 10px; /* Optional padding around the grid */
+  height: 70px;
+}
+.home-button {
+  --background: url('/assets/img/首页.png') no-repeat center center / cover;
+  width: 28px;
+  height: 28px;
+  --padding-start: 0;  /* Removes padding inside the button */
+  --padding-end: 0;
+  --padding-top: 0;  /* Remove padding on top if needed */
+  --padding-bottom: 0;  /* Remove padding on the bottom if needed */
+  background-size: contain; /* Cover ensures the image covers the button, could use contain based on your design */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat;
+  border: none;  /* Optional, remove default border */
+}
+.report-button {
+  --background: url('/assets/img/报表.png') no-repeat center center / cover;
+  width: 28px;
+  height: 28px;
+    --padding-start: 0;  /* Removes padding inside the button */
+  --padding-end: 0;
+  --padding-top: 0;  /* Remove padding on top if needed */
+  --padding-bottom: 0;  /* Remove padding on the bottom if needed */
+  background-size: contain; /* Cover ensures the image covers the button, could use contain based on your design */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat;
+  border: none;  /* Optional, remove default border */
+}
+.user-button {
+  --background: url('/assets/img/用户.png') no-repeat center center / cover;
+  width: 24px;
+  height: 24px;
+  --padding-start: 0;  /* Removes padding inside the button */
+  --padding-end: 0;
+  --padding-top: 0;  /* Remove padding on top if needed */
+  --padding-bottom: 0;  /* Remove padding on the bottom if needed */
+  background-size: contain; /* Cover ensures the image covers the button, could use contain based on your design */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat;
+  border: none;  /* Optional, remove default border */
+}
+
+
+
+
+
+
+

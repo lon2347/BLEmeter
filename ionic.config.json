@@ -1,5 +1,5 @@
 {
-  "name": "sign-pad",
+  "name": "蓝牙电表",
   "integrations": {
     "capacitor": {}
   },

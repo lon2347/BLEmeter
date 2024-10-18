@@ -1,0 +1,91 @@
+<ion-content>
+  <div class="fixed-content">
+    <div class="coverhead"></div>
+    <div class="tophead"></div>
+    <div class="headtxt">蓝牙电表</div>
+    <ion-card class="rectangle">
+      <ion-card-header>
+        <ion-card-title>
+          <ion-label>
+            <span class="cardcontent"></span>事件记录
+          </ion-label>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item>
+            <ion-label>
+              <span class="cardcontent"></span>停电总次数
+            </ion-label>
+            <ion-label slot="end">{{ f4poweroff }}次</ion-label> 
+          </ion-item>
+
+          <ion-item>
+            <ion-label>
+              <span class="cardcontent"></span>停电总累计时间
+            </ion-label> 
+            <ion-label slot="end">{{ t4poweroff }}</ion-label>    
+          </ion-item>
+
+          <ion-item>
+            <ion-label>
+              <span class="cardcontent"></span>开表盖总次数
+            </ion-label> 
+            <ion-label slot="end">{{ f4coveroff }}次</ion-label> 
+          </ion-item>
+
+          <ion-item>
+            <ion-label>
+              <span class="cardcontent"></span>开表盖发生时刻
+            </ion-label> 
+            <ion-label slot="end">{{ r4coveroff_start }}</ion-label> 
+          </ion-item>
+
+          <ion-item>
+            <ion-label>
+              <span class="cardcontent"></span>开表盖结束时刻
+            </ion-label> 
+            <ion-label slot="end">{{ r4coveroff_end }}</ion-label> 
+          </ion-item>
+
+          <ion-item>
+            <ion-label>
+              <span class="cardcontent"></span>负荷开关误动作总次数
+            </ion-label> 
+            <ion-label slot="end">{{ f4faultaction }}次</ion-label> 
+          </ion-item>
+
+          <ion-item>
+            <ion-label>
+              <span class="cardcontent"></span>误动作发生时刻
+            </ion-label> 
+            <ion-label slot="end">{{ r4faultaction_start }}</ion-label> 
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-label>
+              <span class="cardcontent"></span>误动作结束时刻
+            </ion-label> 
+            <ion-label slot="end">{{ r4faultaction_end }}</ion-label> 
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>      
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <div class="footer-content">
+        <ion-button class="home-button"></ion-button>
+        <ion-button class="report-button"></ion-button>
+        <ion-button class="user-button"></ion-button>
+        <ion-img class="home" src="/assets/img/首页字.png"></ion-img>
+        <ion-img class="report" src="/assets/img/报表字.png"></ion-img>
+        <ion-img class="user" src="/assets/img/用户字.png"></ion-img>
+    </div>
+  </ion-toolbar>
+</ion-footer>
+
+
+
+

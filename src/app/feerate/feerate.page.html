@@ -1,0 +1,52 @@
+<ion-content>
+  <div class="fixed-content">
+    <div class="coverhead"></div>
+    <div class="tophead"></div>
+    <div class="headtxt">蓝牙电表</div>
+    <div class="cardcontent">
+      <ion-card class="card1">
+        <ion-card-header>
+          <ion-card-title></ion-card-title>
+          <ion-card-subtitle></ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>当月总电量: {{ totalfee_value }}kWh</ion-card-content>
+      </ion-card>  
+      <ion-card class="card2">
+        <ion-card-header>
+          <ion-card-title></ion-card-title>
+          <ion-card-subtitle>费率时段1  00:00-04:59</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>电量{{ feerate0_value }}kWh</ion-card-content>
+      </ion-card>
+      <ion-card class="card3">
+        <ion-card-header>
+          <ion-card-title></ion-card-title>
+          <ion-card-subtitle>费率时段2  04:59-09:59</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>电量{{ feerate1_value }}kWh</ion-card-content>
+      </ion-card> 
+      <ion-card class="card4">
+        <ion-card-header>
+          <ion-card-title></ion-card-title>
+          <ion-card-subtitle>费率时段3  09:59-14:59</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>电量{{ feerate2_value }}kWh</ion-card-content>
+      </ion-card> 
+      <ion-card class="card5">
+        <ion-card-header>
+          <ion-card-title></ion-card-title>
+          <ion-card-subtitle>费率时段4  14:59-19:59</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>电量{{ feerate3_value }}kWh</ion-card-content> 
+      </ion-card>
+      <ion-card class="card6">
+        <ion-card-header>
+          <ion-card-title></ion-card-title>
+          <ion-card-subtitle>费率时段5  19:59-23:59</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>电量{{ feerate4_value }}kWh</ion-card-content> 
+      </ion-card>
+    </div> 
+  </div>
+</ion-content>
+

@@ -1,0 +1,53 @@
+<ion-content>
+  <div class="fixed-content">
+    <div class="coverhead"></div>
+    <div class="tophead"></div>
+    <div class="headtxt">蓝牙电表</div>
+    <div class="rectangle">
+        <span>{{ power_A }}</span>
+        <span>{{ power_B }}</span>
+        <span>{{ power_C }}</span>
+    </div>
+    <div class="mycanvas">
+      <canvas id="line-chart" width="333" height="191"></canvas>
+    </div>
+    <div class="mydate">
+      <ion-label style="font-size: 12px;">时间：</ion-label>
+      <ion-datetime-button datetime="datetimea" style="font-size: 12px;"></ion-datetime-button>
+
+      <ion-modal [keepContentsMounted]="true">
+        <ng-template>
+          <ion-datetime id="datetimea" style="font-size: 12px;" presentation="date"></ion-datetime>
+        </ng-template>
+      </ion-modal>
+      <ion-label>～</ion-label>
+      <ion-datetime-button datetime="datetimeb" style="font-size: 12px;"></ion-datetime-button>
+
+      <ion-modal [keepContentsMounted]="true">
+        <ng-template>
+          <ion-datetime id="datetimeb" style="font-size: 12px;" presentation="date"></ion-datetime>
+        </ng-template>
+      </ion-modal>
+    </div>
+    <div class="myselect">
+      <ion-button style="width:155px;float:left;margin:0 20px" (click)="resetdate()">清除</ion-button>
+      <ion-button style="width:155px;float:right;margin:0 20px" (click)="showcurve()">查询</ion-button>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <div class="footer-content">
+        <ion-button class="home-button"></ion-button>
+        <ion-button class="report-button"></ion-button>
+        <ion-button class="user-button"></ion-button>
+        <ion-img class="home" src="/assets/img/首页字.png"></ion-img>
+        <ion-img class="report" src="/assets/img/报表字.png"></ion-img>
+        <ion-img class="user" src="/assets/img/用户字.png"></ion-img>
+    </div>
+  </ion-toolbar>
+</ion-footer>
+
+
+
+

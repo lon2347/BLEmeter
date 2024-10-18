@@ -1,0 +1,122 @@
+.fixed-content {
+  position: fixed;
+  top: 0;
+  width: 100%; /* Ensure it spans the full width */
+  // z-index: 10; /* Higher index to keep it above the scrollable list */
+}
+ion-content{
+  opacity: 1;
+  --overflow: hidden; /* Optional, for better control over scrolling */
+  --background: rgba(244, 248, 251, 1);
+}
+.headtxt{
+  display:flex;
+  position: absolute;
+  z-index: 3;
+  top: 30px;
+  justify-content: center;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 23.44px;
+  color: rgba(6, 33, 26, 1);
+}
+.tophead{
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 476px;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.6;
+  background: linear-gradient(166.95deg, rgba(148, 191, 255, 1) 0%, rgba(227, 230, 250, 1) 46.69%, rgba(244, 248, 251, 1) 100%);
+}
+.coverhead{
+  display: flex;
+  position: relative;
+  z-index: 1;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  height: 467px;
+  opacity: 1;
+  background: url('/assets/img/bg.png') no-repeat center center;
+  background-size: cover;
+}
+.cardcontent{
+  position: fixed;
+  top: 0;
+  left: 0; /* Ensure it starts from the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  z-index: 4;
+}
+.card1{
+  background: url('/assets/img/quard.png') no-repeat center center;
+  background-size: cover;
+  box-shadow: none;
+  position:absolute;
+  z-index: 4;
+  top: 108px;
+  width: 335px;
+  height: 99px;
+  opacity: 1;
+  border-radius: 10px;
+}
+.card2{
+  background: url('/assets/img/quard.png') no-repeat center center;
+  background-size: cover;
+  box-shadow: none;
+  position:absolute;
+  z-index: 4;
+  top: 223px;
+  width: 335px;
+  height: 99px;
+  opacity: 1;
+  border-radius: 10px;
+}
+.card3{
+  background: url('/assets/img/quard.png') no-repeat center center;
+  background-size: cover;
+  box-shadow: none;
+  position:absolute;
+  z-index: 4;
+  top: 338px;
+  width: 335px;
+  height: 99px;
+  opacity: 1;
+  border-radius: 10px;
+}
+.card4{
+  background: url('/assets/img/quard.png') no-repeat center center;
+  background-size: cover;
+  box-shadow: none;
+  position:absolute;
+  z-index: 4;
+  top: 453px;
+  width: 335px;
+  height: 99px;
+  opacity: 1;
+  border-radius: 10px;
+}
+
+ion-card-subtitle {
+//   padding-left: 72px; /* Adjust the value as needed */
+  font-weight: 500;
+}
+
+ion-card-content {
+  padding-left: 72px; /* Adjust the value as needed */
+  font-size: 25px;
+  font-weight: 500;
+}
+
+
+
+
