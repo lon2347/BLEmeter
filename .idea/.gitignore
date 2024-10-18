@@ -1,3 +1,5 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+.angular/cache/
+node_modules/
